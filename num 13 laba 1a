@@ -1,0 +1,18 @@
+// четно ли произведение
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a,b,c;
+    cout << " введите числа" << "\n";
+    cin >> a >> b >> c;
+    if ((a * b * c) % 2 ==0)
+        cout << "четное" << "\n";
+    else
+        cout << "нечетное" << "\n";
+    
+return 0;
+}
