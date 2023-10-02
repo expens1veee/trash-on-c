@@ -1,3 +1,4 @@
+// прога на опеределиние попадания числа в интервал 
 #include <iostream>
 #include <cmath>
 using namespace std;
