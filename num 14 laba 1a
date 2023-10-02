@@ -1,0 +1,18 @@
+// кратна ли сумма 3
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a,b,c;
+    cout << " введите числа" << "\n";
+    cin >> a >> b >> c;
+    if ((a + b + c) % 3 ==0)
+        cout << "кратна" << "\n";
+    else
+        cout << "не кратна" << "\n";
+    
+return 0;
+}
