@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    int a,b,c;
+    cout << " введите числа" << "\n";1
+    cin >> a >> b >> c;
+    if (a < c & c < b)
+        cout << "попадает" << "\n";
+    else cout << "не попадает" << "\n";
+
+    
+return 0;
+}
