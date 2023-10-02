@@ -7,12 +7,14 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     int a,b,c;
-    cout << " введите числа" << "\n";1
+    cout << " введите числа" << "\n";
     cin >> a >> b >> c;
-    if (a < c & c < b)
+    if ((a < c and c < b and b > a)or (a > b and c < a and c > b))
         cout << "попадает" << "\n";
     else cout << "не попадает" << "\n";
 
     
 return 0;
 }
+
+
