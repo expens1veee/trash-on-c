@@ -1,0 +1,21 @@
+// максимальное число в последовательности
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a,max = -100000000;
+    setlocale(LC_ALL, "Russian");
+    do {
+        cin >> a;
+        if (a > max and a != 777){
+            max = a;
+        }
+        
+    }
+    while (a !=777 );
+    cout << max << "\n'";
+return 0;
+}
+
