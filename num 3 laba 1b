@@ -9,7 +9,7 @@ int main()
     setlocale(LC_ALL, "Russian");
     do {
         cin >> a;
-        sum = sum * a;
+        sum *= a;
         
     }
     while (a !=777 );
