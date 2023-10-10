@@ -1,0 +1,29 @@
+// количество всяких чисел
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a,sum=0,sum1 = 0,sum0 = 0,sum2= 0;
+    setlocale(LC_ALL, "Russian");
+    do {
+        cin >> a;
+        if (a != 777 and a > 0)
+            sum1 +=1;
+        else if (a!=777 and a == 0)
+            sum0 +=1;
+        else if (a!=0 and a < 0)
+            sum2 +=1;
+        
+        
+    }
+    while (a !=777 );
+    cout << "положительных" << "\n";
+    cout << sum1 << "\n";
+    cout << "отрицательных" << "\n";
+    cout << sum2 << "\n";
+    cout << "нулевых" << "\n";
+    cout << sum0 << "\n";
+return 0;
+}
