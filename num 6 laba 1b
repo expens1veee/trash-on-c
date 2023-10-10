@@ -1,0 +1,20 @@
+// cсреднее арифметическое последовательности
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a,sum=0,sum1 = 0;
+    setlocale(LC_ALL, "Russian");
+    do {
+        cin >> a;
+        if (a != 777){
+            sum +=1;
+            sum1+=a;
+        }
+    }
+    while (a !=777 );
+    cout << sum1/sum << "\n'";
+return 0;
+}
