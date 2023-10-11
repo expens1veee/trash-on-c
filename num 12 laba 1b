@@ -1,0 +1,27 @@
+//порядковый номер 0 числа
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a1,a2,a,sum=0,min= 10000,poryad;
+    setlocale(LC_ALL, "Russian");
+    while (true){
+        cin >> a;
+        sum+=1;
+        if (a == 777){
+            break;
+        }
+        if (a < min){
+            poryad = sum;
+            min = a;
+        }
+    
+        
+    }
+    cout << "порядковый номер минимального числа" << " " << poryad << "\n";
+       
+    
+return 0;
+}
