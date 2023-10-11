@@ -1,0 +1,26 @@
+//порядковый номер последнего 0 числа
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a1,a2,a,sum=0,min= -1000,poryad;
+    setlocale(LC_ALL, "Russian");
+    while (true){
+        cin >> a;
+        sum+=1;
+        if (a == 777){
+            break;
+        }
+        if (a == 0){
+            poryad = sum;
+        }
+    
+        
+    }
+    cout << "порядковый номер последнего 0 числа" << " " << poryad << "\n";
+       
+    
+return 0;
+}
