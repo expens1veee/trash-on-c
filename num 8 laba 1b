@@ -1,0 +1,25 @@
+// пары в последовательности 
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int a1,a2,a,sum=0,sum1=0;
+    setlocale(LC_ALL, "Russian");
+    while (true){
+        cin >> a1 >> a2;
+        if (a1 ==777 || a2 == 777){
+            break;
+        }
+        if (a1==a2){
+            sum+=1;
+        }
+    }
+    
+    
+    
+        cout << sum << "\n";
+    
+return 0;
+}
