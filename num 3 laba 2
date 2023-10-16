@@ -1,15 +1,25 @@
-
-
 #include <iostream>
+#include <time.h>
+
 using namespace std;
 
-
-int main()
-{
-	int a,b;
-	while (true) {
-		a = rand() % 100 +1;
-		cin >> b 
-	}
-}
-
+int main(){
+    int a,b;
+        srand (time(NULL));
+    a = rand() % 100 + 1;
+    while(true){
+        cout << "введите число" << "\n";
+        cin >>b;
+        if (b == a ){
+            cout << "победааааа!)" << "\n";
+            break;
+        }
+        else if (b < a){
+            cout << "Ваше число меньше" << "\n";
+        }
+        else if (b > a){
+                cout << "Ваше число больше" << "\n";
+            }
+        }
+    return 0;
+    }
