@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     int a,b;
+    setlocale(LC_ALL, "russian");
         srand (time(NULL));
     a = rand() % 100 + 1;
     while(true){
