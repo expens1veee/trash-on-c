@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{
+    int x, sum = 0;
+    setlocale(LC_ALL, "russian");
+    std::cout << "введите число" << "\n";
+    std::cin >> x;
+    std::div_t num{};
+    num.quot = x;
+    while (num.quot > 0) {
+        num = std::div(num.quot, 10);
+        sum += num.rem;
+    }
+    std::cout << sum << "\n";
+
+    return 0;
+}
+
