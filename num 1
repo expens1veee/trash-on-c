@@ -1,23 +1,30 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
-#include <cstdlib>
 #include <cmath>
 #include <iomanip>
-#define _USE_MATH_DEFINES
- 
 using namespace std;
- 
- 
-int main()
-{
-    setlocale(LC_ALL, "russian");
-    int i,n;
-    double pi;
-    cin >> n;
-    for (i=0;n>i;i++){
-        pi+= ((pow(-1,i)) / (2*i+1));
-              }
-              pi*=4;
-    cout << pi<< "\n";
-    cout << setprecision(16) << M_PI;
+int main(){
+    double pi = 0.0, d;
+    cin >> d;
+    int k = 1, n;
+    for (int i = 1; ; i++){
+        if ((4.0 / k) < d){
+            break;
+        }
+        else {
+            pi += 4.0 / k;
+            k+=2;
+        }
+        if (( 4.0 / k) < d){
+            break;
+        }
+        else {
+            pi -= 4.0 / k;
+            k += 2;
+        }
+    }
+    cout << pi << "\n";
+    cout << setprecision(16) << M_PI<< "\n";
     return 0;
 }
+
