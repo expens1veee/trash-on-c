@@ -1,0 +1,23 @@
+#define _USE_MATH_DEFINES
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main(){
+    setlocale(LC_ALL,"ressian");
+    int x, i = 1;
+    double tochn, exp = 1.0, t = 1.0;
+    cout << "введите точность" << "\n";
+    cin >> tochn;
+    cout <<  "введите х" << "\n";
+    cin >> x;
+    while (t > tochn){
+        t*= (double) x / i;
+        exp += t;
+        i++;
+    }
+    cout << exp << "\n";
+    cout << setprecision(16) << M_E << "\n";
+    return 0;
+}
+
