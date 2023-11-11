@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+void input(int *a, int n){
+	for (int i = 0; i < n; i++) {
+		cin >> a[i];
+	}
+}
+void output(int *a, int n) {
+	for (int i = 0; i < n; i++) {
+		cout << a[i] << " ";
+	}
+}
+
+int main() {
+	int *A, N;
+	setlocale(LC_ALL, "russian");
+		cout << "введите количество элементов массива" << endl;
+		cin >> N;
+		A = new int[N];
+		input(A, N);
+
+
+		int max = 0 , min = 1000;
+		for (int i = 0; i < N; i++) {
+			if (A[i] > max) {
+				max = A[i];
+			}
+			if (A[i] < min){
+				min = A[i];
+			}
+		}
+		for (int i = 0; i < N; i++) {
+			if (A[i] == min) {
+				A[i] = max;
+			}
+			else if  (A[i] == max) {
+				A[i] = min;
+			}
+		}
+
+
+
+
+
+		output(A, N);
+		delete[] A;
+		return 0;
+
+}
