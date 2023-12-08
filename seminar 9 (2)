@@ -1,0 +1,47 @@
+#include <iostream>
+// #include <bibl.h>
+
+using namespace std;
+
+int main(){
+
+    for ( ; ; ){
+        cout << endl;
+        cout << "введите пункт меню " << endl;
+        cout << "1. создать массив" << endl;
+        cout << "2. ввести массив" << endl;
+        cout << "3. найти максимум" << endl;
+        cout << "4. найти сумму" << endl;
+        cout << "5. отсортировать" << endl;
+        cout << "6. вывести массив" << endl;
+        cout << "7. удалить массив" << endl;
+        cout << "8. выйти из программы" << endl;
+        int n;
+        cin >> n;
+        switch(n){
+            case 1:
+            cout << "ti lox";
+            break;
+            case 2:
+            cout << "ti lox";
+            break;
+            case 3:
+            cout << "ti lox";
+            break;
+            case 4:
+            cout << "ti lox";
+            break;
+            case 5:
+            cout << "ti lox";
+            break;
+            case 6:
+            cout << "ti lox";
+            break;
+            case 7:
+            cout << "ti lox";
+            break;
+            case 8:
+            exit(0);
+        }
+    }
+}
