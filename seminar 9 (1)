@@ -1,0 +1,59 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    // char str[256];
+    // int n;
+    // cin >> str;
+    // 1.	Напишите программу перевода введенной строки в требуемый регистр
+    // cout << "выберите регистр" << endl;
+    // cin >> n;
+    // if (n == 0){
+    //     for (int i; i < strlen(str); i++){
+    //         char ch;
+    //         ch = tolower(str[i]);
+    //         cout << ch;
+    //     }
+    // }
+    // else if (n == 1){
+    //     for (int i; i < strlen(str); i++){
+    //         char ch;
+    //         ch = toupper(str[i]);
+    //         cout << ch;
+    //     }
+    // }
+
+    // 2.	Напишите программу, переворачивающую введенную фразу 
+    // for (int i = 0; i < strlen(str) / 2; i++){
+    //     char ch = str[i];
+    //     str[i]  = str[strlen(str) - i - 1];
+    //     str[strlen(str) - i - 1] = ch;
+    // }
+    // cout << str << endl;
+
+// 3.	Напишите программу, переворачивающую слова во введенной фразе 
+setlocale(LC_ALL, "ru");
+
+#define MAX_STR_SIZE 80		// задаем максимальный размер для буфера строки
+char str[MAX_STR_SIZE];		// буфер для хранения строки
+char* tokens;			// указатель на массив токенов для strtok_s
+char separators[] = " \t\n\r";	// массив разделителей слов
+
+cout << "Вводите строку" << endl;
+cin.getline(str, MAX_STR_SIZE);
+char* cur_lex = strtok_r(str, separators, &tokens); // начинаем выделять слова
+while (cur_lex != NULL) // если в строке еще есть слова, то продолжаем
+{
+	// cur_lex содержит очередное слово
+    for (int i = 0; i < strlen(cur_lex) / 2; i++){
+        char ch = cur_lex[i];
+        cur_lex[i] = cur_lex[strlen(cur_lex) - i - 1];
+        cur_lex[strlen(cur_lex) - i - 1] = ch;
+    }
+	cout << cur_lex << " ";// выводим слово из cur_lex на экран
+
+	// получаем следующее слово в cur_lex
+	cur_lex = strtok_r(NULL, separators, &tokens);
+}
+
+    }
