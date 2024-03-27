@@ -1,1 +1,1 @@
-print("bomzhara nauchilsya kommitit")
+print("bomzhara")
